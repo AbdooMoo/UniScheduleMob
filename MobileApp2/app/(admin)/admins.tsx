@@ -101,8 +101,7 @@ export default function AdminManagement() {
           </View>
         </View>
         <View style={styles.headerActions}>
-          {/* Toggle Registration Button */}
-          <TouchableOpacity
+           <TouchableOpacity
             style={[
               styles.regToggleBtn,
               { backgroundColor: isRegOpen ? '#ffebee' : '#e8f5e8', borderColor: isRegOpen ? '#ef9a9a' : '#c8e6c9' },
@@ -125,8 +124,7 @@ export default function AdminManagement() {
             </Text>
           </TouchableOpacity>
 
-          {/* Add Admin Button */}
-          <TouchableOpacity
+           <TouchableOpacity
             style={styles.addBtn}
             onPress={() => router.push('/(admin)/add-admin')}
           >
@@ -136,8 +134,7 @@ export default function AdminManagement() {
         </View>
       </View>
 
-      {/* Registration Status Banner */}
-      <View style={[styles.regBanner, { backgroundColor: isRegOpen ? '#e8f5e8' : '#fff3e0' }]}>
+       <View style={[styles.regBanner, { backgroundColor: isRegOpen ? '#e8f5e8' : '#fff3e0' }]}>
         <Ionicons
           name={isRegOpen ? 'lock-open-outline' : 'lock-closed-outline'}
           size={16}
@@ -148,8 +145,7 @@ export default function AdminManagement() {
         </Text>
       </View>
 
-      {/* Admin List */}
-      <FlatList
+       <FlatList
         data={admins}
         keyExtractor={(item) => item._id}
         contentContainerStyle={{ paddingHorizontal: 15, paddingBottom: 20 }}
