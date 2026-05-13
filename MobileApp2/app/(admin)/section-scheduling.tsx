@@ -437,7 +437,7 @@ export default function SectionScheduling() {
             )}
           </ScrollView>
 
-          {/* Save / Cancel */}
+         
           <View style={styles.modalFooter}>
             <TouchableOpacity style={styles.cancelBtn} onPress={() => setShowModal(false)}>
               <Text style={styles.cancelBtnText}>Cancel</Text>
