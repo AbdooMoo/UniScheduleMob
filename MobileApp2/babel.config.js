@@ -3,7 +3,7 @@ module.exports = function (api) {
   return {
     presets: ['babel-preset-expo'],
     plugins: [
-      // السطر ده هو اللي هيخلي السايد بار يظهر ويتحرك
+
       'react-native-reanimated/plugin', 
     ],
   };
