@@ -84,7 +84,7 @@ export default function ReviewModal({ visible, onClose, course }: ReviewModalPro
       if (res.ok) {
         Alert.alert("Success", "Thank you! Your review has been submitted.");
         onClose();
-        // Reset state
+        
         setCourseRating(0);
         setInstructorRating(0);
         setComment("");
