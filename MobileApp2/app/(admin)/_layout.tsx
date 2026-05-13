@@ -95,7 +95,7 @@ export default function AdminLayout() {
           }}
         />
 
-        {/* Hidden screens - not shown in drawer */}
+        
         <Drawer.Screen name="add-admin" options={{ drawerItemStyle: { display: 'none' }, title: 'Add Admin' }} />
         <Drawer.Screen name="add-student" options={{ drawerItemStyle: { display: 'none' }, title: 'Add Student' }} />
         <Drawer.Screen name="add-teacher" options={{ drawerItemStyle: { display: 'none' }, title: 'Add Teacher' }} />
