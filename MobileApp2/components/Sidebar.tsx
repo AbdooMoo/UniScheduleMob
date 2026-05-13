@@ -54,7 +54,7 @@ export default function Sidebar(props: any) {
   return (
     <SafeAreaView style={styles.safeArea}>
       <View style={styles.sidebarContainer}>
-        {/* Logo Section */}
+      
         <View style={styles.logoSection}>
           <View style={styles.logoIconBg}>
             <Ionicons name="school" size={24} color="#1a5e4d" />
