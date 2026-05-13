@@ -126,7 +126,7 @@ export default function StudentManagement() {
     setLoadingTimetable(true);
     try {
       const token = await AsyncStorage.getItem('token');
-      // الـ endpoint الصح: /api/registration/student-schedule/:id ويحتاج admin token
+      
       const res = await fetch(`${API_URL}/api/registration/student-schedule/${student._id}`, {
         headers: { Authorization: `Bearer ${token}` }
       });
