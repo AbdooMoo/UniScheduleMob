@@ -83,7 +83,7 @@ const renderScheduleGrid = (scheduleArray) => {
             if (item) {
               const startH = parseInt((item.startTime || '0').split(':')[0]);
               const endH = parseInt((item.endTime || '0').split(':')[0]);
-              const span = Math.max(1, endH - startH); // number of hour columns to span
+              const span = Math.max(1, endH - startH);
               skipCount = span - 1;
 
               const colors = typeColors[item.type] || typeColors.Lecture;
@@ -499,7 +499,7 @@ export default function StudentDashboard() {
             <Text style={styles.sectionLabel}>Schedule Details</Text>
             {renderScheduleList(currentSchedule)}
 
-            {/* Register button */}
+            
             <TouchableOpacity
               style={[styles.registerBtn, registering && { opacity: 0.7 }]}
               onPress={handleRegister}
