@@ -200,7 +200,7 @@ export default function SettingsModal({ visible, onClose }: SettingsModalProps) 
               <View>
                 <Text style={styles.sectionHint}>Choose a strong password (min 6 characters).</Text>
 
-                {/* Status Message */}
+               
                 {passStatus && (
                   <View style={[styles.statusBox, passStatus === 'success' ? styles.statusSuccess : styles.statusError]}>
                     <Ionicons name={passStatus === 'success' ? 'checkmark-circle' : 'alert-circle'} size={16} color={passStatus === 'success' ? '#1a6e1a' : '#c0392b'} />
