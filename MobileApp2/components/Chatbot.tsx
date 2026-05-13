@@ -73,7 +73,7 @@ export default function Chatbot() {
             behavior={Platform.OS === 'ios' ? 'padding' : 'height'}
             style={styles.container}
           >
-            {/* Header */}
+           
             <View style={styles.header}>
               <View style={styles.headerTitle}>
                 <Bot color="white" size={20} />
@@ -83,8 +83,7 @@ export default function Chatbot() {
                 <X color="white" size={24} />
               </TouchableOpacity>
             </View>
-
-            {/* Messages */}
+            
             <FlatList
               ref={flatListRef}
               data={messages}
@@ -110,7 +109,7 @@ export default function Chatbot() {
               )}
             />
 
-            {/* Input */}
+           
             <View style={styles.inputArea}>
               <TextInput
                 style={styles.input}
