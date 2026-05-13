@@ -91,7 +91,7 @@ export default function AdminManagement() {
 
   return (
     <SafeAreaView style={styles.container}>
-      {/* Header */}
+     
       <View style={styles.pageHeader}>
         <View>
           <Text style={styles.mainTitle}>Admin Management</Text>
